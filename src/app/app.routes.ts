@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 export const routes: Routes = [
-    // {component: Home, path: '/'},
+    { path: 'home', component: CheckoutComponent },
+    { path: '', pathMatch: 'full', redirectTo: '/home' },
 ];
